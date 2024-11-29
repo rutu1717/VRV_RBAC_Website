@@ -3,7 +3,6 @@ import Navbar from '../Layout/Navbar';
 import {
   UserCircleIcon,
   BellIcon,
-  CogIcon,
   DocumentTextIcon,
   ChartBarIcon,
   StarIcon,
@@ -63,27 +62,6 @@ const UserDashboard: React.FC = () => {
           joinDate: '2024-01-01',
           bio: 'Software developer and tech enthusiast',
         };
-
-        const mockActivities: Activity[] = [
-          {
-            id: '1',
-            type: 'post',
-            description: 'Created a new post: "Getting Started with React"',
-            date: '2024-02-20',
-          },
-          // Add more mock activities
-        ];
-
-        const mockNotifications: Notification[] = [
-          {
-            id: '1',
-            message: 'Someone commented on your post',
-            date: '2024-02-20',
-            read: false,
-          },
-          // Add more mock notifications
-        ];
-
         setProfile(mockProfile);
         setActivities(activities);
         setNotifications(notifications);

@@ -3,7 +3,6 @@ import { useAuth } from '../../context/AuthContext';
 import Navbar from '../Layout/Navbar';
 import {
   ShieldCheckIcon,
-  UserGroupIcon,
   ClockIcon,
   ChartBarIcon,
   ExclamationTriangleIcon,
