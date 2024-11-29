@@ -10,6 +10,7 @@ app.use(cors({
   origin: [
     'http://localhost:5173',                    // Local development
     'https://vrv123.netlify.app', // Your deployed frontend
+    "https://vrv-rbac-website.onrender.com/api/auth/login"
   ],
   credentials: true,                            // Allow credentials (cookies)
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
