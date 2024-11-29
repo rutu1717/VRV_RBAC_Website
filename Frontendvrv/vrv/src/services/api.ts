@@ -1,5 +1,5 @@
 import axios, {InternalAxiosRequestConfig } from "axios";
-const API_URL = 'https://vrv-rbac-website.onrender.com';
+const API_URL = 'https://vrv-rbac-website.onrender.com/api';
 const api = axios.create({
     baseURL:API_URL,
     headers:{
