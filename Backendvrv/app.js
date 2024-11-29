@@ -6,7 +6,15 @@ const authRoutes = require('./src/routes/auth');
 const protectedRoutes = require('./src/routes/protected');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:5173',                    // Local development
+    'https://vrv123.netlify.app', // Your deployed frontend
+  ],
+  credentials: true,                            // Allow credentials (cookies)
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 app.use(express.json());
 
