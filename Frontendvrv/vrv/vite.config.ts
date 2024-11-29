@@ -5,6 +5,25 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+        assetFileNames: 'assets/[name].[ext]',
+        chunkFileNames: 'assets/[name].js',
+        entryFileNames: 'assets/[name].js',
+      },
+    },
   },
-  base: './', // Add this line
+  server: {
+    port: 3000,
+  },
+  preview: {
+    port: 8080,
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  base: '/',  // Changed from './'
 })
