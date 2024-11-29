@@ -8,11 +8,10 @@ const protectedRoutes = require('./src/routes/protected');
 const app = express();
 app.use(cors({
   origin: [
-    'http://localhost:5173',                    // Local development
-    'https://vrv123.netlify.app', // Your deployed frontend
-    "https://vrv123.netlify.app/api/auth/login"
+    'http://localhost:5173',                   
+    'https://vrv123.netlify.app', 
   ],
-  credentials: true,                            // Allow credentials (cookies)
+  credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
